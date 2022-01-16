@@ -1,0 +1,48 @@
+package labtest2;
+import java.util.Scanner;
+public class Question1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Write a program called CheckOddEven which prints "Odd Number" if the int variable “number” is odd, or “Even Number” otherwise. The program shall always print “bye!” before exiting.
+		//**Hints
+		//n is an even number if (n % 2) is 0; otherwise, it is an odd number. Use == for comparison, e.g., (n % 2) == 0.
+		//Try number = 0, 1, 88, 99, -1, -2 and verify your results
+		//Again, take note of the source-code indentation! Make it a good habit to ident your code properly, for ease of reading your program.
+		
+		Scanner scanMe = new Scanner (System.in);
+		
+		System.out.print("Please enter the amount of number you want to check : ");
+		int number = scanMe.nextInt();
+		
+		for(int a = 0; a < number;a++ ) {
+			System.out.print(" Please enter the number : ");
+			int num = scanMe.nextInt();
+			
+			if(num %2 == 0) {
+				System.out.println("This is even number.");
+			
+			}else
+				System.out.println("This is odd number.");
+		}
+		System.out.println("Bye!");
+	}
+
+}
+
+Output :
+
+Please enter the amount of number you want to check : 6
+ Please enter the number : 0
+This is even number.
+ Please enter the number : 1
+This is odd number.
+ Please enter the number : 88
+This is even number.
+ Please enter the number : 99
+This is odd number.
+ Please enter the number : -1
+This is odd number.
+ Please enter the number : -2
+This is even number.
+Bye!
